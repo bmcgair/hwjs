@@ -22,14 +22,14 @@ spec:
     spec:
       containers:
       - name: hwjs-app
-        image: bmcgair/hwjs:v1
+        image: bmcgair/hwjs:1.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
         resources:
           requests:
-            memory: "64Mi"
+            memory: "12Mi"
             cpu: "10m"
           limits:
-            memory: "256Mi"
-            cpu: "500m"
+            memory: "64Mi"
+            cpu: "50m"
